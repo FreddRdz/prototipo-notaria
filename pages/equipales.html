@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>Prototipo</title>
+  </head>
+  <body>
+    <header>
+      <!-- Inicio del nav -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- Logo de la notaria -->
+          <a class="navbar-brand" href="#">Notaria 51</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../index.html"
+                  >Pisos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/salas.html">Salas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Equipales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" aria-disabled="true">Notario</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <h2 class="mt-4">Equipales del edificio</h2>
+            <!-- Cubiculo 1, piso 2 -->
+            <div class="col-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between mb-1 align-items-end mb-3"
+                  >
+                    <h5 class="card-title">Equipal 1</h5>
+                    <button
+                      type="button"
+                      class="btn btn-outline-success"
+                    >
+                      Disponible
+                    </button>
+                  </div>
+                  <div
+                    class="d-flex align-items-center flex-column justify-content-between"
+                  >
+                    <img
+                      class="w-50"
+                      src="../imgs/mesa-redonda.png"
+                      alt=""
+                    />
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary mt-3"
+                    >
+                      Asignar equipal
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Cubiculo 2, piso 2 -->
+            <div class="col-4">
+              <div class="card">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between mb-1 align-items-end mb-3"
+                  >
+                    <h5 class="card-title">Equipal 2</h5>
+                    <button
+                      type="button"
+                      class="btn btn-outline-danger"
+                    >
+                      Ocupado
+                    </button>
+                  </div>
+                  <div
+                    class="d-flex align-items-center flex-column justify-content-between"
+                  >
+                    <img
+                      class="w-50"
+                      src="../imgs/mesa-redonda.png"
+                      alt=""
+                    />
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary mt-3"
+                    >
+                      Desocupar equipal
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Cubiculo 3, piso 2 -->
+            <div class="col-4">
+              <div class="card">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between mb-1 align-items-end mb-3"
+                  >
+                    <h5 class="card-title">Equipal 3</h5>
+                    <button
+                      type="button"
+                      class="btn btn-outline-danger"
+                    >
+                      Ocupado
+                    </button>
+                  </div>
+                  <div
+                    class="d-flex align-items-center flex-column justify-content-between"
+                  >
+                    <img
+                      class="w-50"
+                      src="../imgs/mesa-redonda.png"
+                      alt=""
+                    />
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary mt-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      Desocupar equipal
+                    </button>
+                    <div
+                      class="modal fade"
+                      id="exampleModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5
+                              class="modal-title"
+                              id="exampleModalLabel"
+                            >
+                              Información del ocupante del equipal
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>
+                              <b>Nombre:</b> Alfredo Alejandro Rodríguez
+                              Coronado
+                            </p>
+                            <p><b>Puesto:</b> Ingeniero</p>
+                            <p>
+                              <b>Hora que ocupó el equipal:</b> 11:56
+                              am
+                            </p>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cancelar
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-primary"
+                            >
+                              Desocupar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

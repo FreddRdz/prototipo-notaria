@@ -1,0 +1,17 @@
+.card-container {
+  height: 450px;
+}
+
+.icono-cubiculo {
+  height: 35px;
+}
+
+.content-cubiculo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.name {
+  margin: 0px 0px 0px 10px;
+  font-size: 18px;
+}
